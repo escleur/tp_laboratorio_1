@@ -1,0 +1,18 @@
+/*
+ ============================================================================
+ Name        : tp1.c
+ Author      : Sanjurjo Gabriel Alejandro
+ Version     :
+ Copyright   : 
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "calculadora.h"
+
+int main(void) {
+	calculadora();
+	return EXIT_SUCCESS;
+}

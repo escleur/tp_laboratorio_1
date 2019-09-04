@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "funcionesMath.h"
+#include "calculadora.h"
+
+
+
+
+float sumar(float op1, float op2){
+	return op1 + op2;
+}
+
+float restar(float op1, float op2){
+	return op1 - op2;
+}
+
+int dividir(float *resultado, float op1, float op2){
+	float res;
+	if(op2 == 0){
+		return EXIT_ERROR;
+	}
+	res = op1 / op2;
+	*resultado = res;
+	return EXIT_SUCCESS;
+}
+
+float multiplicar(float op1, float op2){
+	return op1 * op2;
+}
+
+float factorial(float op1){
+	if(op1 <= 1){
+		return 1;
+	}else{
+		return op1 * factorial(op1 - 1);
+	}
+}

@@ -1,0 +1,7 @@
+00:31:57 **** Clean-only build of configuration Debug for project prueba ****
+make clean 
+rm -rf  ./src/prueba.o  ./src/prueba.d  prueba
+ 
+
+00:31:57 Build Finished (took 108ms)
+

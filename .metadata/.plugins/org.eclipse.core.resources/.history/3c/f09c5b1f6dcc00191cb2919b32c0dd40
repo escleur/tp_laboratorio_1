@@ -1,0 +1,42 @@
+/*
+ * calculadora.h
+ *
+ *  Created on: Aug 31, 2019
+ *      Author: gabriel
+ */
+
+#ifndef CALCULADORA_H_
+#define CALCULADORA_H_
+
+#define EXIT_ERROR -1
+#define MENU_OPERADOR_1 1
+#define MENU_OPERADOR_2 2
+#define MENU_OPERACION  3
+#define MENU_RESULTADO  4
+#define MENU_SALIR      5
+
+int getChar( char *resultado,
+			 char *mensaje,
+			 char *mensajeError,
+			 char minimo,
+			 char maximo,
+			 int reintentos);
+
+int getInt(	int *resultado,
+			char *mensaje,
+			char *mensajeError,
+			int minimo,
+			int maximo,
+			int reintentos);
+
+int getFloat(float *resultado,
+			 char *mensaje,
+			 char *mensajeError,
+			 float minimo,
+			 float maximo,
+			 int reintentos);
+
+int calculadora(void);
+void imprimirMenuMain(float opA, float opB);
+
+#endif /* CALCULADORA_H_ */

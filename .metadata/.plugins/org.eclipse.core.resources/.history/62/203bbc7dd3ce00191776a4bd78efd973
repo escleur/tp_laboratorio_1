@@ -1,0 +1,27 @@
+/*
+ * funcionesMath.h
+ *
+ *  Created on: Sep 3, 2019
+ *      Author: gabriel
+ */
+
+#ifndef FUNCIONESMATH_H_
+#define FUNCIONESMATH_H_
+
+float sumar(float op1,
+		    float op2);
+
+float restar(float op1,
+		     float op2);
+
+int dividir(float *pResultado,
+		    float op1,
+		    float op2);
+
+float multiplicar(float op1,
+		          float op2);
+
+float factorial(float op1);
+
+
+#endif /* FUNCIONESMATH_H_ */
