@@ -30,33 +30,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="tp1.c" partName="tp1.c" path="/home/gabriel/programacion1clases/tp_laboratorio_1/tp1/src/tp1.c" title="tp1.c" tooltip="tp1/src/tp1.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tp1/src/tp1.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="569" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="calculadora.h" partName="calculadora.h" path="/home/gabriel/programacion1clases/tp_laboratorio_1/tp1/src/calculadora.h" title="calculadora.h" tooltip="tp1/src/calculadora.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tp1/src/calculadora.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="395" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="calculadora.c" partName="calculadora.c" path="/home/gabriel/programacion1clases/tp_laboratorio_1/tp1/src/calculadora.c" title="calculadora.c" tooltip="tp1/src/calculadora.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tp1/src/calculadora.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="395" selectionOffset="0" selectionTopPixel="2559"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="funcionesMath.c" partName="funcionesMath.c" path="/home/gabriel/programacion1clases/tp_laboratorio_1/tp1/src/funcionesMath.c" title="funcionesMath.c" tooltip="tp1/src/funcionesMath.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tp1/src/funcionesMath.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="395" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="funcionesMath.h" partName="funcionesMath.h" path="/home/gabriel/programacion1clases/tp_laboratorio_1/tp1/src/funcionesMath.h" title="funcionesMath.h" tooltip="tp1/src/funcionesMath.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tp1/src/funcionesMath.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="395" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="/home/gabriel/programacion1clases/tp_laboratorio_1/tp2/src/main.c" title="main.c" tooltip="tp2/src/main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tp2/src/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="81" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -67,6 +47,9 @@
 <view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (1 item)"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="75" org.eclipse.ui.ide.markerType="230" org.eclipse.ui.ide.pathField="100" org.eclipse.ui.ide.resourceField="88" org.eclipse.ui.ide.severityAndDescriptionField="526"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -94,7 +77,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.cdt.ui.CPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -270,60 +253,49 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/tp1/src/calculadora.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/tp1/src/tp1.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/tp1/src/funciones.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/tp1/src/funcionesMath.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/tp1/src/funcionesMath.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/tp1/src/calculadora.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/tp1/src/calculadora.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/tp1/src/calculadora.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/tp1/src/funcionesMath.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/tp1/src/funcionesMath.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/tp2/src/main.c"/>
 </editors>
-<item historyLabel="funciones.c" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="funcionesMath.c" index="3">
-<position info="not_deleted" x="1960" y="0"/>
-</item>
-<item historyLabel="funcionesMath.h" index="4">
-<position/>
-</item>
-<item historyLabel="calculadora.c" index="0">
-<position info="not_deleted" x="4402" y="0"/>
-</item>
-<item historyLabel="funcionesMath.c" index="3">
-<position info="not_deleted" x="1960" y="0"/>
-</item>
-<item historyLabel="funcionesMath.c" index="3">
+<item historyLabel="funcionesMath.c" index="2">
 <position info="not_deleted" x="488" y="0"/>
 </item>
 <item historyLabel="calculadora.c" index="0">
 <position info="not_deleted" x="397" y="19"/>
 </item>
-<item historyLabel="funcionesMath.h" index="4">
+<item historyLabel="funcionesMath.h" index="3">
 <position/>
 </item>
-<item historyLabel="funcionesMath.c" index="3">
+<item historyLabel="funcionesMath.c" index="2">
 <position info="not_deleted" x="488" y="0"/>
 </item>
 <item historyLabel="calculadora.c" index="0">
 <position info="not_deleted" x="439" y="20"/>
 </item>
-<item historyLabel="funcionesMath.c" index="3">
+<item historyLabel="funcionesMath.c" index="2">
 <position info="not_deleted" x="484" y="0"/>
 </item>
-<item historyLabel="funcionesMath.h" index="4">
+<item historyLabel="funcionesMath.h" index="3">
 <position/>
 </item>
-<item historyLabel="calculadora.h" index="5">
+<item historyLabel="calculadora.h" index="4">
 <position info="not_deleted" x="977" y="0"/>
 </item>
-<item historyLabel="funcionesMath.h" index="4">
+<item historyLabel="funcionesMath.h" index="3">
 <position info="not_deleted" x="683" y="0"/>
 </item>
-<item historyLabel="funcionesMath.c" index="3">
+<item historyLabel="funcionesMath.c" index="2">
 <position info="not_deleted" x="1412" y="0"/>
 </item>
 <item historyLabel="calculadora.c" index="0">
 <position info="not_deleted" x="1397" y="0"/>
 </item>
-<item historyLabel="funcionesMath.c" index="3">
+<item historyLabel="funcionesMath.c" index="2">
 <position info="not_deleted" x="0" y="396"/>
 </item>
 <item historyLabel="calculadora.c" index="0">
@@ -335,58 +307,58 @@
 <item historyLabel="calculadora.c" index="0">
 <position info="not_deleted" x="2883" y="0"/>
 </item>
-<item historyLabel="funcionesMath.c" index="3">
+<item historyLabel="funcionesMath.c" index="2">
 <position info="not_deleted" x="0" y="396"/>
 </item>
 <item historyLabel="calculadora.c" index="0">
 <position info="not_deleted" x="4305" y="0"/>
 </item>
-<item historyLabel="calculadora.h" index="5">
+<item historyLabel="calculadora.h" index="4">
 <position info="not_deleted" x="1129" y="0"/>
 </item>
 <item historyLabel="calculadora.c" index="0">
 <position info="not_deleted" x="5409" y="25"/>
 </item>
-<item historyLabel="calculadora.h" index="5">
+<item historyLabel="calculadora.h" index="4">
 <position info="not_deleted" x="1129" y="0"/>
 </item>
 <item historyLabel="calculadora.c" index="0">
 <position info="not_deleted" x="7009" y="0"/>
 </item>
-<item historyLabel="calculadora.h" index="5">
+<item historyLabel="calculadora.h" index="4">
 <position info="not_deleted" x="1129" y="0"/>
 </item>
-<item historyLabel="calculadora.h" index="5">
+<item historyLabel="calculadora.h" index="4">
 <position/>
 </item>
 <item historyLabel="calculadora.c" index="0">
 <position info="not_deleted" x="6158" y="0"/>
 </item>
-<item historyLabel="funcionesMath.c" index="3">
+<item historyLabel="funcionesMath.c" index="2">
 <position info="not_deleted" x="677" y="0"/>
 </item>
 <item historyLabel="calculadora.c" index="0">
 <position info="not_deleted" x="5454" y="171"/>
 </item>
-<item historyLabel="funcionesMath.c" index="3">
+<item historyLabel="funcionesMath.c" index="2">
 <position info="not_deleted" x="1397" y="0"/>
 </item>
-<item historyLabel="funcionesMath.h" index="4">
+<item historyLabel="funcionesMath.h" index="3">
 <position info="not_deleted" x="427" y="0"/>
 </item>
-<item historyLabel="funcionesMath.c" index="3">
+<item historyLabel="funcionesMath.c" index="2">
 <position info="not_deleted" x="1260" y="0"/>
 </item>
 <item historyLabel="calculadora.c" index="0">
 <position info="not_deleted" x="5454" y="171"/>
 </item>
-<item historyLabel="calculadora.h" index="5">
+<item historyLabel="calculadora.h" index="4">
 <position/>
 </item>
 <item historyLabel="calculadora.c" index="0">
 <position info="not_deleted" x="0" y="395"/>
 </item>
-<item historyLabel="calculadora.h" index="5">
+<item historyLabel="calculadora.h" index="4">
 <position info="not_deleted" x="395" y="0"/>
 </item>
 <item historyLabel="tp1.c" index="1">
@@ -395,35 +367,42 @@
 <item historyLabel="calculadora.c" index="0">
 <position info="not_deleted" x="0" y="395"/>
 </item>
-<item historyLabel="funcionesMath.c" index="3">
+<item historyLabel="funcionesMath.c" index="2">
 <position info="not_deleted" x="395" y="0"/>
 </item>
-<item historyLabel="funcionesMath.h" index="4">
+<item historyLabel="funcionesMath.h" index="3">
 <position info="not_deleted" x="395" y="0"/>
 </item>
-<item historyLabel="funcionesMath.c" index="3">
+<item historyLabel="funcionesMath.c" index="2">
 <position info="not_deleted" x="395" y="0"/>
 </item>
-<item historyLabel="calculadora.h" index="5">
+<item historyLabel="calculadora.h" index="4">
 <position info="not_deleted" x="395" y="0"/>
 </item>
 <item historyLabel="tp1.c" index="1">
 <position info="not_deleted" x="0" y="396"/>
 </item>
-<item historyLabel="calculadora.h" index="5">
+<item historyLabel="calculadora.h" index="4">
 <position info="not_deleted" x="395" y="0"/>
 </item>
 <item historyLabel="tp1.c" index="1">
 <position info="not_deleted" x="573" y="0"/>
 </item>
-<item historyLabel="calculadora.h" index="5">
+<item historyLabel="calculadora.h" index="4">
 <position info="not_deleted" x="395" y="0"/>
 </item>
 <item historyLabel="calculadora.c" index="0">
 <position info="not_deleted" x="0" y="395"/>
 </item>
-<item active="true" historyLabel="tp1.c" index="1">
-<position info="not_deleted" x="573" y="0"/>
+<item historyLabel="tp1.c" index="1">
+<position info="not_deleted" x="569" y="0"/>
+</item>
+<item historyLabel="calculadora.h" index="5"/>
+<item historyLabel="calculadora.c" index="6"/>
+<item historyLabel="funcionesMath.c" index="7"/>
+<item historyLabel="funcionesMath.h" index="8"/>
+<item active="true" historyLabel="main.c" index="9">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -442,6 +421,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="tp2/src/main.c">
+<persistable path="/tp2/src/main.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="funcionesMath.h" tooltip="tp1/src/funcionesMath.h">
 <persistable path="/tp1/src/funcionesMath.h"/>
 </file>
