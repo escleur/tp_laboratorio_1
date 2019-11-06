@@ -1,0 +1,19 @@
+17:39:45 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:60:6: warning: implicit declaration of function ‘getInt’ [-Wimplicit-function-declaration]
+      getInt(&option,"Ingrese la opcion:\n","Error\n",1,10,3);
+      ^
+Finished building: ../main.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/gabriel/programacion1clases/tp_laboratorio_1/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+
+17:39:45 Build Finished (took 65ms)
+

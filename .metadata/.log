@@ -1307,3 +1307,12 @@ org.eclipse.core.runtime.AssertionFailedException: unknown saveable: org.eclipse
 
 !ENTRY org.eclipse.cdt.core 1 0 2019-10-04 01:24:16.150
 !MESSAGE Indexed 'tp2' (4 sources, 44 headers) in 0.49 sec: 1,438 declarations; 2,761 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!SESSION 2019-10-16 01:27:29.366 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-10-16 01:30:10.945
+!MESSAGE Indexed 'tp3_linux' (3 sources, 41 headers) in 1.22 sec: 1,208 declarations; 1,942 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)

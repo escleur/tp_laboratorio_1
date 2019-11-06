@@ -1,38 +1,82 @@
-01:24:34 **** Clean-only build of configuration Debug for project tp2 ****
-make clean 
-rm -rf  ./src/ArrayEmployees.o ./src/abmUI.o ./src/main.o ./src/utn.o  ./src/ArrayEmployees.d ./src/abmUI.d ./src/main.d ./src/utn.d  tp2
- 
-01:24:34 **** Build of configuration Debug for project tp2 ****
+23:37:47 **** Incremental Build of configuration Debug for project tp3_linux ****
 make all 
-Building file: ../src/ArrayEmployees.c
+Building file: ../main.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.d" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
-Finished building: ../src/ArrayEmployees.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+Finished building: ../main.c
  
-Building file: ../src/abmUI.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/abmUI.d" -MT"src/abmUI.d" -o "src/abmUI.o" "../src/abmUI.c"
-Finished building: ../src/abmUI.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function ‘main’:
-../src/main.c:45:5: warning: implicit declaration of function ‘modificacion’ [-Wimplicit-function-declaration]
-     modificacion(aEmployee, QTY_EMPLOYEE);
-     ^
-Finished building: ../src/main.c
- 
-Building file: ../src/utn.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.d" -o "src/utn.o" "../src/utn.c"
-Finished building: ../src/utn.c
- 
-Building target: tp2
+Building target: tp3_linux
 Invoking: GCC C Linker
-gcc  -o "tp2"  ./src/ArrayEmployees.o ./src/abmUI.o ./src/main.o ./src/utn.o   
-Finished building target: tp2
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/gabriel/programacion1clases/tp_laboratorio_1/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
  
-01:24:41 **** Incremental Build of configuration Debug for project tp2 ****
+23:37:55 **** Incremental Build of configuration Debug for project tp3_linux ****
 make all 
 make: Nothing to be done for `all'.
+17:37:35 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../Controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Controller.d" -MT"Controller.d" -o "Controller.o" "../Controller.c"
+../Controller.c: In function ‘controller_loadFromText’:
+../Controller.c:19:3: warning: implicit declaration of function ‘parser_EmployeeFromText’ [-Wimplicit-function-declaration]
+   parser_EmployeeFromText(pFile , pArrayListEmployee);
+   ^
+../Controller.c: In function ‘controller_ListEmployee’:
+../Controller.c:93:22: warning: ‘bufferNombre’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+    employee_getNombre(buffer, bufferNombre);
+                      ^
+Finished building: ../Controller.c
+ 
+Building file: ../Employee.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employee.d" -MT"Employee.d" -o "Employee.o" "../Employee.c"
+../Employee.c: In function ‘employee_setNombre’:
+../Employee.c:83:3: warning: implicit declaration of function ‘strncpy’ [-Wimplicit-function-declaration]
+   strncpy(this->nombre, nombre,128);
+   ^
+../Employee.c:83:3: warning: incompatible implicit declaration of built-in function ‘strncpy’ [enabled by default]
+../Employee.c: In function ‘employee_getNombre’:
+../Employee.c:94:3: warning: incompatible implicit declaration of built-in function ‘strncpy’ [enabled by default]
+   strncpy(nombre, this->nombre,128);
+   ^
+../Employee.c: In function ‘isValidNombre’:
+../Employee.c:102:2: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+  if(chequear(nombre, 1, 0, " ") && strlen(nombre)<127)
+  ^
+../Employee.c:102:36: warning: incompatible implicit declaration of built-in function ‘strlen’ [enabled by default]
+  if(chequear(nombre, 1, 0, " ") && strlen(nombre)<127)
+                                    ^
+Finished building: ../Employee.c
+ 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../parser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"parser.d" -MT"parser.d" -o "parser.o" "../parser.c"
+Finished building: ../parser.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/gabriel/programacion1clases/tp_laboratorio_1/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
+17:39:45 **** Incremental Build of configuration Debug for project tp3_linux ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:60:6: warning: implicit declaration of function ‘getInt’ [-Wimplicit-function-declaration]
+      getInt(&option,"Ingrese la opcion:\n","Error\n",1,10,3);
+      ^
+Finished building: ../main.c
+ 
+Building target: tp3_linux
+Invoking: GCC C Linker
+gcc  -o "tp3_linux"  ./Controller.o ./Employee.o ./main.o ./parser.o ./utn.o    /home/gabriel/programacion1clases/tp_laboratorio_1/tp3_linux/LinkedList.a
+Finished building target: tp3_linux
+ 
