@@ -1,4 +1,4 @@
-testing/src/main_test.o: ../testing/src/main_test.c \
+testing/src/main_test.d: ../testing/src/main_test.c \
  ../testing/src/../../testing/utest.h ../testing/src/../inc/newTest.h \
  ../testing/src/../inc/addTest.h ../testing/src/../inc/getNodeTest.h \
  ../testing/src/../inc/addNodeTest.h \

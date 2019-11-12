@@ -37,9 +37,10 @@ linkedList: $(OBJS) $(USER_OBJS)
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) linkedList
+	-$(RM) $(OBJS)$(C_DEPS)$(EXECUTABLES) linkedList
 	-@echo ' '
 
 .PHONY: all clean dependents
+.SECONDARY:
 
 -include ../makefile.targets
