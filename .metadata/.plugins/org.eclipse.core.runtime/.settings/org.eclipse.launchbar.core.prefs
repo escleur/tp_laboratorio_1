@@ -5,3 +5,5 @@ configDescList=org.eclipse.launchbar.core.descriptorType.default\:tp1 Debug,org.
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:linkedList/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:linkedList/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:prueba/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:prueba/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

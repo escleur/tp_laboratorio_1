@@ -539,3 +539,94 @@ int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order)
 
 }
 
+/** \brief Mapea los elementos de la lista utilizando la funcion recibida como parametro
+ * \param pList LinkedList* Puntero a la lista
+ * \param pFunc (*pFunc) Puntero a la funcion criterio
+ * \param order int  [1] Indica orden ascendente - [0] Indica orden descendente
+ * \return int Retorna  (-1) Error: si el puntero a la listas es NULL
+                                ( 0) Si ok
+ */
+int ll_map(LinkedList* this, int (*pFunc)(void*))
+{
+    int returnAux =-1;
+	int i;
+	if(this!=NULL && pFunc!=NULL)
+	{
+		returnAux = 0;
+		for(i=0; i<this->size; i++)
+		{
+			pFunc(ll_get(this,i));
+		}
+	}
+    return returnAux;
+
+}
+
+/** \brief Crea y retorna una nueva lista con los elementos indicados por el filtro
+ *
+ * \param pList LinkedList* Puntero a la lista
+ * \param from int Indice desde el cual se copian los elementos en la nueva lista
+ * \param to int Indice hasta el cual se copian los elementos en la nueva lista (no incluido)
+ * \return LinkedList* Retorna  (NULL) Error: si el puntero a la listas es NULL
+                                o (si el indice from es menor a 0 o mayor al len de la lista)
+                                o (si el indice to es menor o igual a from o mayor al len de la lista)
+                         (puntero a la nueva lista) Si ok
+*/
+LinkedList* ll_filter(LinkedList* this, int (*pFunc)(void*))
+{
+    LinkedList* cloneArray = NULL;
+    int i;
+    Node* pNode;
+    if(this!=NULL && pFunc!=NULL)
+    {
+    	cloneArray = ll_newLinkedList();
+    	pNode = this->pFirstNode;
+		for(i=0;i<this->size;i++)
+		{
+			if(pFunc(pNode->pElement))
+			{
+				ll_add(cloneArray,pNode->pElement);
+			}
+			//if(pNode!=NULL)
+				pNode = pNode->pNextNode;
+		}
+    }
+
+    return cloneArray;
+}
+
+
+/** \brief Crea y retorna una nueva lista con los elementos indicados por el filtro
+ *
+ * \param pList LinkedList* Puntero a la lista
+ * \param from int Indice desde el cual se copian los elementos en la nueva lista
+ * \param to int Indice hasta el cual se copian los elementos en la nueva lista (no incluido)
+ * \return LinkedList* Retorna  (NULL) Error: si el puntero a la listas es NULL
+                                o (si el indice from es menor a 0 o mayor al len de la lista)
+                                o (si el indice to es menor o igual a from o mayor al len de la lista)
+                         (puntero a la nueva lista) Si ok
+*/
+LinkedList* ll_reduce(LinkedList* this, int (*pFunc)(void*))
+{
+    LinkedList* cloneArray = NULL;
+    int i;
+    Node* pNode;
+    if(this!=NULL && pFunc!=NULL)
+    {
+    	cloneArray = ll_newLinkedList();
+    	pNode = this->pFirstNode;
+		for(i=0;i<this->size;i++)
+		{
+			if(pFunc(pNode->pElement))
+			{
+				ll_add(cloneArray,pNode->pElement);
+			}
+			//if(pNode!=NULL)
+				pNode = pNode->pNextNode;
+		}
+    }
+
+    return cloneArray;
+}
+
+
