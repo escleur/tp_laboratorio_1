@@ -596,7 +596,7 @@ LinkedList* ll_filter(LinkedList* this, int (*pFunc)(void*))
 }
 
 
-/** \brief Crea y retorna una nueva lista con los elementos indicados por el filtro
+/** \brief Retorna la lista con los elementos indicados por el filtro
  *
  * \param pList LinkedList* Puntero a la lista
  * \param from int Indice desde el cual se copian los elementos en la nueva lista
@@ -606,27 +606,23 @@ LinkedList* ll_filter(LinkedList* this, int (*pFunc)(void*))
                                 o (si el indice to es menor o igual a from o mayor al len de la lista)
                          (puntero a la nueva lista) Si ok
 */
-LinkedList* ll_reduce(LinkedList* this, int (*pFunc)(void*))
+int ll_reduce(LinkedList* this, int (*pFunc)(void*))
 {
-    LinkedList* cloneArray = NULL;
-    int i;
-    Node* pNode;
+	int retorno = -1;
+	int i;
     if(this!=NULL && pFunc!=NULL)
     {
-    	cloneArray = ll_newLinkedList();
-    	pNode = this->pFirstNode;
-		for(i=0;i<this->size;i++)
+    	retorno = 0;
+		for(i=this->size-1;i>=0;i--)
 		{
-			if(pFunc(pNode->pElement))
+			if(!pFunc(ll_get(this, i)))
 			{
-				ll_add(cloneArray,pNode->pElement);
+				ll_remove(this,i);
 			}
-			//if(pNode!=NULL)
-				pNode = pNode->pNextNode;
 		}
     }
 
-    return cloneArray;
+    return retorno;
 }
 
 

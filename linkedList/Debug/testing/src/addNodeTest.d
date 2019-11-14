@@ -1,4 +1,4 @@
-testing/src/addNodeTest.o: ../testing/src/addNodeTest.c \
+testing/src/addNodeTest.d: ../testing/src/addNodeTest.c \
  ../testing/src/../../testing/utest.h \
  ../testing/src/../../inc/LinkedList.h \
  ../testing/src/../../testing/inc/Employee.h

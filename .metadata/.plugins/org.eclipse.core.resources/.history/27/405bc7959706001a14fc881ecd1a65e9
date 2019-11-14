@@ -73,7 +73,7 @@ int main(void)
 	//list2 = ll_filter(list,ff);
 	//ll_map(list2,f);
 	ll_reduce(list,ff);
-	ll_map(list, f);
+	ll_map(list, f)
     return 0;
 }
 

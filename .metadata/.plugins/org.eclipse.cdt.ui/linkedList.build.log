@@ -1,109 +1,9 @@
-22:09:27 **** Incremental Build of configuration Debug for project linkedList ****
+01:34:22 **** Incremental Build of configuration Debug for project linkedList ****
 make all 
-Building file: ../testing/src/addNodeTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/addNodeTest.d" -MT"testing/src/addNodeTest.o" -o "testing/src/addNodeTest.o" "../testing/src/addNodeTest.c"
-Finished building: ../testing/src/addNodeTest.c
- 
-Building file: ../testing/src/addTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/addTest.d" -MT"testing/src/addTest.o" -o "testing/src/addTest.o" "../testing/src/addTest.c"
-Finished building: ../testing/src/addTest.c
- 
-Building file: ../testing/src/clearTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/clearTest.d" -MT"testing/src/clearTest.o" -o "testing/src/clearTest.o" "../testing/src/clearTest.c"
-Finished building: ../testing/src/clearTest.c
- 
-Building file: ../testing/src/cloneTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/cloneTest.d" -MT"testing/src/cloneTest.o" -o "testing/src/cloneTest.o" "../testing/src/cloneTest.c"
-Finished building: ../testing/src/cloneTest.c
- 
-Building file: ../testing/src/containsAllTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/containsAllTest.d" -MT"testing/src/containsAllTest.o" -o "testing/src/containsAllTest.o" "../testing/src/containsAllTest.c"
-Finished building: ../testing/src/containsAllTest.c
- 
-Building file: ../testing/src/containsTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/containsTest.d" -MT"testing/src/containsTest.o" -o "testing/src/containsTest.o" "../testing/src/containsTest.c"
-Finished building: ../testing/src/containsTest.c
- 
-Building file: ../testing/src/deleteLinkedListTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/deleteLinkedListTest.d" -MT"testing/src/deleteLinkedListTest.o" -o "testing/src/deleteLinkedListTest.o" "../testing/src/deleteLinkedListTest.c"
-Finished building: ../testing/src/deleteLinkedListTest.c
- 
-Building file: ../testing/src/getNodeTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/getNodeTest.d" -MT"testing/src/getNodeTest.o" -o "testing/src/getNodeTest.o" "../testing/src/getNodeTest.c"
-Finished building: ../testing/src/getNodeTest.c
- 
-Building file: ../testing/src/getTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/getTest.d" -MT"testing/src/getTest.o" -o "testing/src/getTest.o" "../testing/src/getTest.c"
-Finished building: ../testing/src/getTest.c
- 
-Building file: ../testing/src/indexOfTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/indexOfTest.d" -MT"testing/src/indexOfTest.o" -o "testing/src/indexOfTest.o" "../testing/src/indexOfTest.c"
-Finished building: ../testing/src/indexOfTest.c
- 
-Building file: ../testing/src/isEmptyTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/isEmptyTest.d" -MT"testing/src/isEmptyTest.o" -o "testing/src/isEmptyTest.o" "../testing/src/isEmptyTest.c"
-Finished building: ../testing/src/isEmptyTest.c
- 
-Building file: ../testing/src/lenTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/lenTest.d" -MT"testing/src/lenTest.o" -o "testing/src/lenTest.o" "../testing/src/lenTest.c"
-Finished building: ../testing/src/lenTest.c
- 
-Building file: ../testing/src/newTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/newTest.d" -MT"testing/src/newTest.o" -o "testing/src/newTest.o" "../testing/src/newTest.c"
-Finished building: ../testing/src/newTest.c
- 
-Building file: ../testing/src/popTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/popTest.d" -MT"testing/src/popTest.o" -o "testing/src/popTest.o" "../testing/src/popTest.c"
-Finished building: ../testing/src/popTest.c
- 
-Building file: ../testing/src/pushTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/pushTest.d" -MT"testing/src/pushTest.o" -o "testing/src/pushTest.o" "../testing/src/pushTest.c"
-Finished building: ../testing/src/pushTest.c
- 
-Building file: ../testing/src/removeTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/removeTest.d" -MT"testing/src/removeTest.o" -o "testing/src/removeTest.o" "../testing/src/removeTest.c"
-Finished building: ../testing/src/removeTest.c
- 
-Building file: ../testing/src/setTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/setTest.d" -MT"testing/src/setTest.o" -o "testing/src/setTest.o" "../testing/src/setTest.c"
-Finished building: ../testing/src/setTest.c
- 
-Building file: ../testing/src/sortTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/sortTest.d" -MT"testing/src/sortTest.o" -o "testing/src/sortTest.o" "../testing/src/sortTest.c"
-Finished building: ../testing/src/sortTest.c
- 
-Building file: ../testing/src/subListTest.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testing/src/subListTest.d" -MT"testing/src/subListTest.o" -o "testing/src/subListTest.o" "../testing/src/subListTest.c"
-Finished building: ../testing/src/subListTest.c
- 
 Building file: ../src/LinkedList.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.o" -o "src/LinkedList.o" "../src/LinkedList.c"
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.c"
 Finished building: ../src/LinkedList.c
- 
-Building file: ../src/main.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
  
 Building target: linkedList
 Invoking: GCC C Linker
@@ -111,5 +11,5 @@ gcc  -o "linkedList"  ./testing/src/Employee.o ./testing/src/addNodeTest.o ./tes
 Finished building target: linkedList
  
 
-22:09:28 Build Finished. 0 errors, 0 warnings. (took 934ms)
+01:34:22 Build Finished (took 172ms)
 
