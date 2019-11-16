@@ -6,6 +6,7 @@
 C_SRCS += \
 ../Controller.c \
 ../Employee.c \
+../LinkedList.c \
 ../main.c \
 ../parser.c \
 ../utn.c 
@@ -13,6 +14,7 @@ C_SRCS += \
 OBJS += \
 ./Controller.o \
 ./Employee.o \
+./LinkedList.o \
 ./main.o \
 ./parser.o \
 ./utn.o 
@@ -20,6 +22,7 @@ OBJS += \
 C_DEPS += \
 ./Controller.d \
 ./Employee.d \
+./LinkedList.d \
 ./main.d \
 ./parser.d \
 ./utn.d 
