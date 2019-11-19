@@ -47,7 +47,7 @@ int vaciarLLEmpleados(LinkedList* pArrayListEmployee)
 	if(pArrayListEmployee != NULL)
 	{
 		retorno = 0;
-		while(ll_len(pArrayListEmployee)>0)
+		while(!ll_isEmpty(pArrayListEmployee))
 		{
 			buffer = (Employee*)ll_pop(pArrayListEmployee, 0);
 			employee_delete(buffer);
@@ -292,7 +292,8 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee)
 		index = employee_GetPorId(pArrayListEmployee, buffer, id);
 		employee_delete(buffer);
 		if(index != -1){
-			buffer = ll_pop(pArrayListEmployee, index);
+			buffer = ll_get(pArrayListEmployee, index);
+			buffer = ll_remove(pArrayListEmployee, index);
 			printf("Baja exitosa\n");
 			retorno = 0;
 		}else{
@@ -422,3 +423,52 @@ int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee)
 
 }
 
+int imprimirSueldoPorHora(void* p){
+	Employee* emp = (Employee*)p;
+	if(emp->horasTrabajadas!=0)
+		printf("%d   %s   %d\n",emp->id,emp->nombre,emp->sueldo/emp->horasTrabajadas);
+}
+
+int controller_sublist(LinkedList* pArrayListEmployee)
+{
+	int retorno = -1;
+	int desde;
+	int hasta;
+	int indice;
+	Employee *emp;
+	LinkedList *lista2;
+	if(pArrayListEmployee!=NULL)
+	{
+		retorno = 0;
+		getInt(&desde,"Ingrese el indice desde donde quiere crear la sub lista \n","Error",0,1000000,2);
+		getInt(&hasta,"Ingrese el indice hasta donde quiere crear la sub lista \n","Error",0,1000000,2);
+		if(desde<hasta && hasta<=ll_len(pArrayListEmployee)){
+			lista2 = ll_subList(pArrayListEmployee,desde,hasta);
+			controller_ListEmployee(lista2);
+			getInt(&indice,"Ingrese un indice para tomar un elemento de la sub lista \n","Error",0,1000000,2);
+			if(indice<ll_len(lista2)){
+				emp = ll_get(lista2,indice);
+				indice = ll_indexOf(lista2, emp);
+				printf("El elemento de la posicion %d en la lista auxiliar ", indice);
+				indice = ll_indexOf(pArrayListEmployee, emp);
+				printf(" esta localizado en la posicion %d en la lista principal\n",indice);
+				if(ll_contains(lista2, emp)){
+					printf("El elemento esta contenido en la lista auxiliar\n");
+				}else{
+					printf("El elemento no esta contenido en la lista auxiliar\n");
+				}
+				if(ll_containsAll(pArrayListEmployee, lista2)){
+					printf("Los elementos de la lista auxiliar estan contenidos en la lista principal\n");
+				}else{
+					printf("Los elementos de la lista auxiliar no estan contenidos en la lista principal\n");
+				}
+				ll_map(lista2,imprimirSueldoPorHora);
+			}
+		}else{
+			printf("Los limites ingresados estan equivocados");
+		}
+
+
+	}
+	return retorno;
+}

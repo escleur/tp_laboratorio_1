@@ -25,6 +25,7 @@
 int main()
 {
     int option = 0;
+    int i;
 
     LinkedList* listaEmpleados = ll_newLinkedList();
     do{
@@ -37,7 +38,8 @@ int main()
     		     "7. Ordenar empleados\n"
     		     "8. Guardar los datos de los empleados en el archivo data.csv (modo texto).\n"
     		     "9. Guardar los datos de los empleados en el archivo data.csv (modo binario).\n"
-    		    "10. Salir\n");
+    		     "10. Pruebas\n"
+    		    "20. Salir\n");
     	getInt(&option,"Ingrese la opcion:\n","Error\n",1,10,3);
         switch(option)
         {
@@ -67,8 +69,15 @@ int main()
             	break;
             case 9:
             	controller_saveAsBinary("data2.csv" , listaEmpleados);
+            	break;
+            case 10:
+            	 controller_sublist(listaEmpleados);
         }
-    }while(option != 10);
+    }while(option != 20);
+    for(i=0;i<ll_len(listaEmpleados);i++)
+    	employee_delete(ll_get(listaEmpleados,i));
+    ll_clear(listaEmpleados);
+    ll_deleteLinkedList(listaEmpleados);
     return 0;
 }
 
